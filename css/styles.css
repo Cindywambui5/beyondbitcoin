@@ -1,0 +1,414 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../images/bitcoin2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-between;
+    align-content: center;
+} 
+.navigation{
+    flex: 1;
+    text-align: right;
+}
+.navigation ul li{
+    list-style: none; 
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+} 
+.navigation ul li a {
+    color:#fff; 
+    text-decoration: none;
+    font-size: 18px;
+}
+.navigation ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+.hometext{
+    margin-top: 10vh;
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hometext h1{
+    font-size: 62px;
+}
+.hometext h2{
+    margin: 10px 0 40px;
+    font-size: 40px;
+}
+.hometext p{
+    margin: 10px 0 40px;
+    font-size:20px;
+}
+nav img{
+    display: none;
+}
+@media(max-width:700px) {
+    .hometext h1{
+        font-size: 30px;
+    }
+    .hometext h2{
+        font-size: 20px;
+    }
+    .navigation ul li{
+        display: block;
+    }
+    .navigation{
+        position: fixed;
+        background-color: rgba(54,28,3,0.5);
+        height: 100vh;
+        width:200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition:1s ;
+    }
+    nav img{
+        display: block;
+        width: 30px;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .barsimg{
+        position: fixed;
+        background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        padding:2px;
+    }
+    .navigation ul{
+        padding: 30px;
+    }
+}
+.row1{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Benefits{
+    flex-basis: 50%;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 3%;
+    box-sizing: border-box;
+}
+.Benefits img{
+    width: 20px;
+}
+.Benefits h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.Benefits p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.homepagevideo{
+    flex-basis: 50%;
+    padding-top: 80px;
+    background:#FCF3CF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 1%;
+    margin-bottom: 3%;
+    padding: 20px 70px;
+}
+.homepagevideo h2{
+    color: #7D6608;
+    font-weight: 500;
+    font-size: 25px;
+}
+.homepagevideo:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2) ;
+}
+.buynowbutton{
+    background:#F4D03F;
+    color: #7D6608;
+    border:#7D6608 1px solid;
+    border-radius: 4px;
+    margin-bottom: 2%;
+}
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.column{
+    flex-basis: 31%;
+    background:#F4D03F;
+    border-radius: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+@media(max-width:700px){
+    .row1{
+        flex-direction: column;
+    }
+    .homepagevideo{
+        padding: 20px 15px;
+    }
+    .homepagevideo iframe{
+        width: 400px;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+.section3{
+    width: 100%;
+    max-height: 100vh;
+    background-image: url("../images/bitcoin4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section3 h2{
+    padding-top: 8vh;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color:#fff
+}
+.Curriculum{
+    color: #fff;
+    width: 90%;
+    padding-left: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.csection{
+    text-align: center;
+    border:solid 1px whitesmoke;
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left: 1%;
+    padding:20px;
+    box-sizing: border-box; 
+}
+.csection:hover{
+    background-color: #F4F6F6;
+    color: black;
+    transition: 0.5s;
+}
+@media(max-width :700px){
+    .Curriculum{
+        padding-left: 5vh;
+        flex-direction: column;
+    }
+    .section3 h2{
+        padding-top: 3vh;
+        margin-bottom: 0.5%;
+    }
+    .csection{
+        margin-bottom: 5%;  
+        padding: 5px;  
+    } 
+}
+.section4 h2{
+    margin-top: 3%;
+    padding-top:3vh ;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+.FAQ{
+    width: 80%;
+    margin: auto;
+    text-align: Left;
+    padding: 50px 50px;
+    border: #7D6608 solid 1px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.FAQ img{
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.fcolumn{
+    padding:0 10px;
+}
+.fcolumn p{
+    background-color:#F4D03F;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+@media(max-width: 700px){
+    .FAQ{
+        flex-direction: column;
+        padding:10px 10px;
+        padding-left: 10vh;
+    }
+    .fcolumn h3{
+        padding-right:25vh;
+    }
+    .fcolumn p{
+        margin-right: 20vh;
+    }
+}
+.section4 h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 2%;
+    padding-top: 3vh;
+    margin-bottom: 5%;
+    color:#7D6608 ;
+}
+.Testimonials{
+    width: 90%;
+    margin-top: 2%;
+    padding: 0 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    width: 100px; ;
+}
+.tcolumn{
+    flex-basis: 30%;
+    margin-bottom: 5%;
+    padding: 10px 10px; 
+    background-color:#FCF3CF;
+    border-radius: 15px;
+}.tcolumn p{
+    padding: 3vh 5vh;
+    background-color:#F4D03F;
+    border-radius: 10px;
+}
+.imag2{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.row3{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20vh;
+}
+.r3tcolumn{
+    flex-basis: 45%;
+    margin-bottom: 5%;
+    padding: 10px 10px;
+    background-color:#FCF3CF;
+    border-radius: 15px;
+}
+.r3tcolumn p{
+    padding: 3vh 5vh;
+    background-color:#F4D03F;
+    border-radius: 10px;
+}
+.day{
+    color: #7D6608;
+}
+@media(max-width: 700px){
+    .section4 h2{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    .Testimonials{
+        flex-direction: column;
+        padding: 0 3vh;
+    }
+    .tcolumn{
+        padding: 10px 15px;
+    }
+    .row3{
+        flex-direction: column;
+        padding: 0 4vh;
+    }
+    .r3tcolumn{
+        padding: 10px 15px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color:#FCF3CF;
+}
+.footersect h2{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footerlinks img{
+    width: 50px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.contactsect h2{
+    font-weight: 600;
+    text-align: center;
+}
+.contactus{
+    margin:5%;
+    margin-left:25%;
+}
+.contact-form input, .contact-form textarea{
+    width:70%;
+    padding:15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 2px solid #7D6608;
+    border-radius: 10px;
+}
+.contact-form p{
+    font-size: 20px;
+}
+.contactsubmit{
+    background:#F4D03F;
+    color: #7D6608;
+    border:#7D6608 1px solid;
+    border-radius: 4px;
+}
