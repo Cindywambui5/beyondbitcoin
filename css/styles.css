@@ -186,7 +186,7 @@ nav img{
         padding: 20px 15px;
     }
     .homepagevideo iframe{
-        width: 300px;
+        width: 330px;
         height: 300px;
         border-radius: 10px;
     }
@@ -237,8 +237,8 @@ nav img{
 }
 @media(max-width :700px){
     .Curriculum{
-        padding-left: 5vh;
         flex-direction: column;
+        padding-left: 3vh;
     }
     .section3 h2{
         padding-top: 3vh;
@@ -248,11 +248,6 @@ nav img{
         margin-bottom: 5%;  
         padding: 5px;  
     } 
-    .csection:hover{
-        background-color: #F4F6F6;
-        color: black;
-        transition: 0.5s;
-    }
 }
 .section4 h2{
     margin-top: 3%;
@@ -298,7 +293,7 @@ nav img{
         padding:10px 10px;
     }
     .FAQ img{
-        width: 350px;
+        width: 250px;
         height:370px;
         border-radius: 10px;
         position: relative;
