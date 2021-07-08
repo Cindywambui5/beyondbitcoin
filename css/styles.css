@@ -153,6 +153,7 @@ nav img{
     box-shadow:0 0 20px 0px rgba(0,0,0,0.2) ;
 }
 .buynowbutton{
+    padding: 5px 15px;
     background:#F4D03F;
     color: #7D6608;
     border:#7D6608 1px solid;
@@ -185,7 +186,9 @@ nav img{
         padding: 20px 15px;
     }
     .homepagevideo iframe{
-        width: 400px;
+        width: 350px;
+        height: 300px;
+        border-radius: 10px;
     }
     .row{
         flex-direction: column;
@@ -245,6 +248,11 @@ nav img{
         margin-bottom: 5%;  
         padding: 5px;  
     } 
+    .csection:hover{
+        background-color: #F4F6F6;
+        color: black;
+        transition: 0.5s;
+    }
 }
 .section4 h2{
     margin-top: 3%;
@@ -407,8 +415,17 @@ nav img{
     font-size: 20px;
 }
 .contactsubmit{
+    padding: 5px 15px;
     background:#F4D03F;
     color: #7D6608;
     border:#7D6608 1px solid;
     border-radius: 4px;
+}
+@media(max-width:700px){
+    .contact-form input, .contact-form textarea{
+        width: 75%;
+    }
+    .contactus{
+        margin-left: 15%;
+    }
 }
