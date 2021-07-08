@@ -186,7 +186,7 @@ nav img{
         padding: 20px 15px;
     }
     .homepagevideo iframe{
-        width: 350px;
+        width: 300px;
         height: 300px;
         border-radius: 10px;
     }
@@ -290,16 +290,19 @@ nav img{
     box-sizing: border-box;
 }
 @media(max-width: 700px){
+    .section4{
+        margin:0 5%;
+    }
     .FAQ{
         flex-direction: column;
         padding:10px 10px;
-        padding-left: 10vh;
     }
-    .fcolumn h3{
-        padding-right:25vh;
-    }
-    .fcolumn p{
-        margin-right: 20vh;
+    .FAQ img{
+        width: 350px;
+        height:370px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
     }
 }
 .section4 h2{
